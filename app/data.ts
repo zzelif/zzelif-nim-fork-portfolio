@@ -1,8 +1,9 @@
 type Project = {
   name: string
   description: string
-  link?: string
+  link: string
   video?: string
+  path: string
   id: string
 }
 
@@ -43,6 +44,9 @@ export const PROJECTS: Project[] = [
     description:
       'CNN-based emotion recognition system (Project EYES) with >80% accuracy to support emotional awareness in children with Down Syndrome, deployed in an inclusive education setting in Valenzuela City.',
     link: 'https://github.com/zzelif/ProjectEyes',
+    video:
+      'https://res.cloudinary.com/ddzrtzzgt/video/upload/v1751271830/z7nxfhggq3huwkkexg2z.mp4',
+    path: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
     id: 'project1',
   },
   {
@@ -51,6 +55,7 @@ export const PROJECTS: Project[] = [
     link: 'https://motion-primitives.com/',
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    path: '',
     id: 'project2',
   },
 ]

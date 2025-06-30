@@ -210,16 +210,33 @@ export default function Personal() {
                   {project.name}
                   <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 transition-all duration-200 group-hover:max-w-full dark:bg-zinc-50"></span>
                 </a>
-                <p className="text-base text-zinc-600 dark:text-zinc-400">
-                  {project.description}
-                </p>
+                <AnimatedBackground
+                  enableHover
+                  className="h-full w-full rounded-xl bg-zinc-100 dark:bg-zinc-900/80"
+                  transition={{
+                    type: 'spring',
+                    bounce: 0,
+                    duration: 0.2,
+                  }}
+                >
+                  <Link
+                    href={project.path}
+                    className="relative -mx-3 inline-flex w-full rounded-xl px-3 py-3"
+                  >
+                    <div className="z-10">
+                      <p className="text-base text-zinc-600 dark:text-zinc-400">
+                        {project.description}
+                      </p>
+                    </div>
+                  </Link>
+                </AnimatedBackground>
               </div>
             </div>
           ))}
         </div>
       </motion.section>
 
-      <motion.section
+      {/*       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
@@ -253,7 +270,7 @@ export default function Personal() {
             ))}
           </AnimatedBackground>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <motion.section
         variants={VARIANTS_SECTION}
