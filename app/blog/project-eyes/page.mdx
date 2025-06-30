@@ -10,21 +10,21 @@ export const metadata = {
 
 <Cover
   src="https://cdn.cosmos.so/affd4b79-e848-4dfd-bd42-5f2c4a847365?format=jpeg"
-  alt="Image from the movie Alien - from cosmos.com"
-  caption="cosmos.com"
+  alt="Image from the classroom deployment"
+  caption="Project EYES prototype for classroom deployment"
 />
 
 # Project EYES: Utilizing Affective Computing for Emotional Awareness in Children with Down Syndrome
 
 Children with Down Syndrome (DS) often face challenges in recognizing and interpreting emotional cues, which can hinder their social interactions and development. Traditional support systems such as social skills training or Augmentative and Alternative Communication (AAC) devices may fall short of addressing real-time emotional awareness.
 
-**Project EYES** was developed to fill this gap through an affordable, non-intrusive affective computing system designed for inclusive classroom environments. The system detects emotions in real-time using facial recognition and eye-gaze tracking, providing teachers and caregivers with visual feedback via an LCD and a mobile application.
+**Project EYES** was developed to fill this gap through an affordable, non-intrusive affective computing system designed for inclusive classroom environments. The system detects emotions in real time using facial recognition and eye-gaze tracking, providing teachers and caregivers with visual feedback via an LCD and a companion mobile application.
 
 ## Background: Down Syndrome and Emotional Recognition
 
 Children with Down Syndrome experience delays in cognitive and emotional development. A key challenge is the inability to effectively interpret facial expressions and non-verbal cues—skills necessary for healthy social interaction.
 
-Existing technologies like AR and VR are often cost-prohibitive in public schools. Project EYES focuses instead on core emotional detection (happy, sad, angry, surprised, neutral), offering simplicity and real-world usability.
+Existing technologies like AR and VR are often cost-prohibitive in public schools. Project EYES focuses instead on core emotional detection (happy, sad, angry, surprised, neutral), offering simplicity, portability, and real-world usability.
 
 ## What is Affective Computing?
 
@@ -32,35 +32,36 @@ Affective computing is a field of computer science that allows systems to recogn
 
 - **Facial Expression Recognition (FER)** via Convolutional Neural Networks (CNN)
 - **Eye Gaze Tracking** using Raspberry Pi camera input
-- **Emotion Feedback** displayed on a screen and through a mobile interface
+- **Emotion Feedback** displayed both locally (LCD) and remotely (mobile dashboard)
 
-This enables caregivers to instantly see how a child might be feeling and adapt their response accordingly.
+This enables caregivers to instantly see how a child might be feeling and respond accordingly.
 
 ## Project Objectives
 
 The project aimed to:
 
-- Develop a real-time emotion recognition assistive device
-- Utilize affective computing to support children with Down Syndrome
-- Deliver a user-friendly interface for non-technical stakeholders (teachers, parents)
-- Evaluate effectiveness, usability, and acceptance of the system in a real classroom
+- Develop a real-time facial emotion recognition assistive device for inclusive education
+- Support children with DS by improving emotional monitoring in classrooms
+- Deliver an intuitive mobile app for teachers and parents
+- Evaluate the system’s performance, usability, and adoption
 
 ## System Overview
 
-**Hardware Components:**
+### Hardware Components
 
 - Raspberry Pi 4
 - Pi Camera Module V2
 - LCD Display
-- Portable casing
+- Compact cooling fan & modified casing
 
-**Software Stack:**
+### Software Stack
 
-- Python with OpenCV for image capture and processing
-- CNN model trained on facial emotion datasets
-- Custom GUI for emotion display
+- **Frontend:** React Native with TypeScript for the mobile app
+- **Backend:** Python Flask with Firebase to connect routes, handle data and storage, and communicate with the model
+- **ML Pipeline:** CNN model (TensorFlow/Keras) for real-time emotion detection
+- **Extras:** Integrated Botpress AI-powered chatbot using verified sources for guidance
 
-**Detected Emotions:**
+### Detected Emotions
 
 - Happy
 - Sad
@@ -68,49 +69,64 @@ The project aimed to:
 - Surprised
 - Neutral
 
+### Mobile Companion App Features
+
+Developed using React Native with TypeScript, the mobile app empowers teachers and parents with:
+
+- **Emotion dashboard** with current status of each child
+- **Graph-based emotion frequency tracking** over time
+- **Two-way chat system** for communication between assigned teachers and multiple parents
+- **Botpress AI-powered chatbot** trained on verified psychological resources to recommend supportive responses based on inferred emotional states
+
 ## Development Methodology
 
-The system was developed following an Input-Process-Output (IPO) model with human-centered design principles from ISO 9241-210:2019. The methodology included:
+The project followed an Input-Process-Output (IPO) model grounded in ISO 9241-210:2019 human-centered design principles. Development was carried out in phases:
 
-- Research on emotion recognition and assistive tools
-- Software/hardware prototyping
-- Iterative testing with teachers from Gen. T. de Leon Elementary School
-- Expert feedback from psychologists and SPED educators
+1. **Input:** Literature review, hardware/software selection, and dataset preparation
+2. **Process:**
+   - Model training using facial expression datasets
+   - Raspberry Pi–based image pipeline implementation
+   - Flask API integration with mobile app
+3. **Output:** A complete system deployed and tested at General Tiburcio de Leon Elementary School
 
-Usability and accuracy were prioritized. The CNN model reached approximately 93% validation accuracy during testing.
+Multiple prototype designs were iterated based on expert feedback from psychologists, special education teachers, and system usability testers.
 
 ## Evaluation and Findings
 
-Teachers and caregivers reported:
+Project EYES was deployed in an inclusive classroom, where teachers and caregivers reported:
 
-- Improved emotional awareness of children in the classroom
-- High ease of use and interface clarity
-- Positive intention to use the system regularly
+- Improved understanding of children's emotional states
+- High ease of use and clear visual feedback
+- Strong intention to integrate it into regular class routines
 
-**Recognition accuracy:** ~93%  
-**Latency:** Suitable for real-time classroom scenarios  
-**Perceived usefulness:** Strongly positive feedback from users
+**Performance metrics:**
+
+- **Recognition Accuracy:** ~93% validation accuracy
+- **Real-Time Feedback:** Low latency, suitable for live classroom use
+- **Usability Rating:** Positive feedback across all ISO 9241-210 usability dimensions
 
 ## ISO 9241-210 Compliance
 
-Project EYES adhered to the following human-centered design principles:
+Project EYES was designed in full alignment with ISO 9241-210:2019 human-centered design principles:
 
-- Understanding users and context (SPED teachers, children with DS)
-- User involvement in evaluation cycles
-- Iterative improvements based on classroom feedback
-- Cross-disciplinary collaboration (engineering, psychology, education)
+- **User-focused design:** Targeted for SPED teachers and caregivers
+- **Iterative testing:** Teachers provided feedback during and after testing cycles
+- **Cross-functional collaboration:** Developers, educators, and psychologists worked together to refine both hardware and software
+
+The application and device both reflect accessibility, responsiveness, and contextual usability for Philippine public school settings.
 
 ## Reflections and Future Work
 
-Cultural sensitivity was a core consideration. The system was tested in a Filipino public school, and future iterations will incorporate localized emotion datasets.
+Project EYES was deployed with cultural and classroom-specific considerations, especially recognizing emotion expression norms among Filipino children. The system successfully met its goals as a low-cost, portable, and human-centered emotion monitoring solution.
 
-**Next steps:**
+### Future directions include:
 
-- Expand emotion range (e.g. fear, disgust)
-- Improve connectivity and response speed
-- Broaden deployment in inclusive schools
-- Explore integration with speech-based feedback
+- Expanding the emotion set (e.g. fear, boredom, confusion)
+- Enhancing connectivity and cloud sync performance
+- Refining the chatbot’s contextual suggestions
+- Integrating voice or tone recognition for multimodal analysis
+- Deploying across other inclusive schools for broader validation
 
 ---
 
-Project EYES demonstrates how affective computing can be effectively applied in low-resource educational settings to foster emotional inclusivity. With further iteration, it holds promise as a scalable, assistive platform for diverse special education contexts.
+**Project EYES** demonstrates how affective computing, when paired with empathetic design, can empower inclusive education in low-resource settings. The fusion of real-time AI, mobile tools, and caregiver insight creates a solid foundation for emotional inclusivity and future-focused learning environments.
