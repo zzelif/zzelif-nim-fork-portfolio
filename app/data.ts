@@ -46,12 +46,13 @@ export const PROJECTS: Project[] = [
     link: 'https://github.com/zzelif/ProjectEyes',
     video:
       'https://res.cloudinary.com/ddzrtzzgt/video/upload/v1751271830/z7nxfhggq3huwkkexg2z.mp4',
-    path: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    path: '/blog/project-eyes',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
+    name: 'Personal Portfolio',
+    description:
+      'Personalized forked from Nim — a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion-Primitives',
     link: 'https://motion-primitives.com/',
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
@@ -75,7 +76,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Software Engineer Intern',
     start: 'August 2023',
     end: 'September 2023',
-    description: '',
+    description:
+      'Contributed to the backend development of DevEx API, implementing and testing CRUD operations using .NET C#. Gained foundational experience with Azure services, GitHub Actions, C#, ReactJS, and JavaScript through learning sessions and practical tasks. Participated in virtual stand-ups and team presentations while actively exploring DevOps concepts and cloud fundamentals.',
     id: 'work2',
   },
 ]
@@ -107,7 +109,7 @@ export const EDUCATION: Education[] = [
     degree: 'BS in Computer Engineering Major in System Development',
     start: '2021',
     end: '2025',
-    achievement: '',
+    achievement: "President's Lister",
     id: 'edu1',
   },
   {
@@ -115,7 +117,7 @@ export const EDUCATION: Education[] = [
     degree: 'STEM Strand',
     start: '2015',
     end: '2021',
-    achievement: '',
+    achievement: 'Salutatorian',
     id: 'edu2',
   },
 ]
@@ -123,11 +125,11 @@ export const EDUCATION: Education[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/zzelif/',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/dan-gabriel-lettac/',
   },
 ]
 

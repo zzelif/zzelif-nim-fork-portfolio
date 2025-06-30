@@ -18,10 +18,10 @@ export const metadata: Metadata = {
   },
   title: {
     default: 'zzelif - Personal Portfolio',
-    template: '%s | Nim',
+    template: '%s | zzelif',
   },
   description:
-    'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+    'Personalized portfolio forked from Nim — a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
 }
 
 const geist = Geist({
