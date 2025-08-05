@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
     link: 'https://four44-ecommerce.onrender.com/',
     video:
       'https://res.cloudinary.com/ddzrtzzgt/video/upload/v1754361363/zzelif_444-ecommerce__At_444_Custom_Print_Hub_we_are_committed_to_delivering_exceptional_quality_and_service_to_meet_all_your_printing_and_design_needs._Firefox_Developer_Edition_2025-08-05_10-33-51_fq5jsw.mp4',
-    path: '',
+    path: '/blog/444-ecommerce',
     id: 'project3',
   },
   {
