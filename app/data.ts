@@ -52,12 +52,31 @@ export const PROJECTS: Project[] = [
   {
     name: 'Personal Portfolio',
     description:
-      'Personalized forked from Nim — a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion-Primitives',
-    link: 'https://motion-primitives.com/',
+      'Personalized portfolio forked from Nim — a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion-Primitives',
+    link: 'https://github.com/zzelif/zzelif-nim-fork-portfolio',
     video:
       'https://res.cloudinary.com/ddzrtzzgt/video/upload/v1751295602/zzelif-nim-fork-portfolio_Deployment_Overview_Vercel_-_Opera_2025-06-30_22-52-55_kccksl.mp4',
     path: '',
     id: 'project2',
+  },
+  {
+    name: '444 Custom Print Hub',
+    description:
+      'Marketing (pseudo-ecommerce) website for the 444 Custom Print Hub business located in Antipolo, Rizal. Built with Next.js 15, React 19, Tailwind CSS v4, Framer-Motions, and Shadcn UI',
+    link: 'https://four44-ecommerce.onrender.com/',
+    video:
+      'https://res.cloudinary.com/ddzrtzzgt/video/upload/v1754361363/zzelif_444-ecommerce__At_444_Custom_Print_Hub_we_are_committed_to_delivering_exceptional_quality_and_service_to_meet_all_your_printing_and_design_needs._Firefox_Developer_Edition_2025-08-05_10-33-51_fq5jsw.mp4',
+    path: '',
+    id: 'project3',
+  },
+  {
+    name: 'NextJS Dashboard',
+    description:
+      'Full stack financial Dashboard with publich home page, login page, dashboard pages, and invoice pages for Next.js Foundations course.',
+    link: 'https://nextjs-dashboard-zzelifs-projects.vercel.app/',
+    video: '/',
+    path: '',
+    id: 'project4',
   },
 ]
 
@@ -108,7 +127,7 @@ export const EDUCATION: Education[] = [
     school: 'Polytechnic University of the Philippines',
     degree: 'BS in Computer Engineering Major in System Development',
     start: '2021',
-    end: '2025',
+    end: 'Present',
     achievement: "President's Lister",
     id: 'edu1',
   },
@@ -133,7 +152,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     label: 'Resume',
-    link: 'https://drive.google.com/file/d/1ZwGC5GXmYZVYWyxxTlnmzz7U20tKcmjx/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1qMqsa2ZyLHdNIaLmsCj5arGDJ07K0Ya4/view?usp=sharing',
   },
 ]
 

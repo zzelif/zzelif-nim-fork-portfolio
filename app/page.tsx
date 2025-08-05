@@ -298,6 +298,9 @@ export default function Personal() {
                     <p className="text-zinc-500 dark:text-zinc-400">
                       {edu.school}
                     </p>
+                    <p className="text-zinc-400 dark:text-zinc-400">
+                      {edu.achievement}
+                    </p>
                   </div>
                   <p className="text-zinc-600 dark:text-zinc-400">
                     {edu.start} - {edu.end}
