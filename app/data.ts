@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
       'Marketing (pseudo-ecommerce) website for the 444 Custom Print Hub business located in Antipolo, Rizal. Built with Next.js 15, React 19, Tailwind CSS v4, Framer-Motions, and Shadcn UI',
     link: 'https://four44-ecommerce.onrender.com/',
     video:
-      'https://res.cloudinary.com/ddzrtzzgt/video/upload/v1754361363/zzelif_444-ecommerce__At_444_Custom_Print_Hub_we_are_committed_to_delivering_exceptional_quality_and_service_to_meet_all_your_printing_and_design_needs._Firefox_Developer_Edition_2025-08-05_10-33-51_fq5jsw.mp4',
+      'https://res.cloudinary.com/ddzrtzzgt/video/upload/v1757703947/444_E-Commerce_Firefox_Developer_Edition_2025-09-13_03-03-08_vlom0s.mp4',
     path: '/blog/444-ecommerce',
     id: 'project3',
   },
@@ -77,6 +77,15 @@ export const PROJECTS: Project[] = [
     video: '/',
     path: '',
     id: 'project4',
+  },
+  {
+    name: 'EduCast - Podcast Web Platform for the PUP Open University System',
+    description:
+      'A Full stack role-based podcast platform for the PUP Open University System students and professors to watch and upload podcasts, respectively. It is built with Vite for faster and optimized modern web development on top of Nodejs and Express back-end along with Supabase Postgres for database management and authentication.',
+    link: 'https://educast.onrender.com',
+    video: '/',
+    path: '',
+    id: 'project5',
   },
 ]
 
@@ -125,7 +134,7 @@ export const BLOG_POSTS: BlogPost[] = [
 export const EDUCATION: Education[] = [
   {
     school: 'Polytechnic University of the Philippines',
-    degree: 'BS in Computer Engineering Major in System Development',
+    degree: 'BS in Computer Engineering Major in Systems Development',
     start: '2021',
     end: 'Present',
     achievement: "President's Lister",
@@ -143,7 +152,7 @@ export const EDUCATION: Education[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Github',
+    label: 'GitHub',
     link: 'https://github.com/zzelif/',
   },
   {
@@ -152,7 +161,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     label: 'Resume',
-    link: 'https://drive.google.com/file/d/1qMqsa2ZyLHdNIaLmsCj5arGDJ07K0Ya4/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1--b9FaKKnhNi_z2T6nUuJ4mjDo9cSWCq/view?usp=sharing',
   },
 ]
 
